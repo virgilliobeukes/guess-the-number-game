@@ -1,0 +1,82 @@
+body {
+    background-color: #5e63b6;
+    height: 100vh; 
+    margin: 0;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+#gamePlayBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 1200px;
+    height: 600px;
+    background-color: #fafafa;
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    margin: auto;
+    border: 5px solid;
+    border-color: #222831;
+}
+
+h1 {
+    font-family: 'Bangers', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3rem;
+    color: #222831;
+} 
+
+.numberGuessed {
+    border: 4px solid;
+    border-color: #222831;
+    border-radius: 10px;
+    background-color: #fafafa;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-family: 'Bangers', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #5e63b6;
+}
+
+#guessInput {
+    display: flex; /* Use flexbox to align children horizontally */
+    gap: 0; /* Remove gap to merge them closely */
+}
+
+#playerInput {
+    font-family: 'Bangers', sans-serif;
+    font-size: 2rem;
+    padding: 10px; /* Add padding for better spacing */
+    border: 4px solid #222831; /* Border color to match the button */
+    border-radius: 10px 0 0 10px; /* Round the left corners */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    font-family: 'Bangers', sans-serif;
+    font-size: 2rem;
+    padding: 10px 20px; /* Add padding for better click area */
+    border: 4px solid #222831; /* Match border with the input */
+    background-color: #5e63b6; /* Background color */
+    border-radius: 0 10px 10px 0; /* Round the right corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Optional: Add a hover effect for the button */
+button:hover {
+    background-color: #4a4e7e; /* Darker shade on hover */
+    color: white; /* Change text color on hover */
+}
+
+ 
+
+.result, .playerGuess, .attempts {
+    color: #222831;
+    font-size: 1.5rem;
+    font-family: 'Bangers', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
